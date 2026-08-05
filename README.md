@@ -2,6 +2,19 @@
 
 Create an auditable AKS baseline for workloads that require FIPS-enabled Azure Linux nodes.
 
+## Project metadata
+
+The metadata below is derived from tracked source, manifests, and infrastructure
+files. It describes what this repository includes; live-service integration remains
+bounded by the documented deployment and validation limitations.
+
+| Category | Included |
+| --- | --- |
+| Platforms | Microsoft Azure; GitHub Actions; Kubernetes |
+| Services and stack | AKS; Azure Linux; Azure Policy; Azure Monitor; Defender for Cloud |
+| Languages and formats | Python; Bicep; Bicep parameters; Bash; JSON; YAML |
+| Delivery and IaC | Bicep + `.bicepparam`; GitHub Actions CI; Kubernetes/YAML manifests; Python validation/tests |
+
 ## Problem statement
 
 A regulated-cluster request validates FIPS-enabled Azure Linux pools, private API access, workload identity, policy controls, and approved production scope before deployment planning.
